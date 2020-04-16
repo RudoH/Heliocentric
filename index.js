@@ -21,7 +21,8 @@ window.addEventListener("load", function () {
         console.log(geoSunrise, geoSunset)
         geoSunrise = timeToMinutes(geoSunrise) - timezone;
         if (geoSunrise < 0) geoSunrise += 60 * 12
-        geoSunset = (timeToMinutes(geoSunset) + 60 * 12 - timezone); 
+        geoSunset = (timeToMinutes(geoSunset) + 60 * 12 - timezone);
+        if (geoSunset < 720) geoSunset += 60 * 12 
         console.log(geoSunrise, geoSunset)
 
         let timeInMins = hours * 60 + minutes;
