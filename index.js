@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
         geoSunrise = timeToMinutes(geoSunrise) - timezone;
         if (geoSunrise < 0) geoSunrise += 60 * 12
         geoSunset = (timeToMinutes(geoSunset) + 60 * 12 - timezone);
-        if (geoSunset < 720) geoSunset += 60 * 12 
+        if (geoSunset < 720) geoSunset += 60 * 12
         console.log(geoSunrise, geoSunset)
 
         let timeInMins = hours * 60 + minutes;
@@ -53,7 +53,6 @@ window.addEventListener("load", function () {
       setDarkMode()
       sun.src =
         "https://images.vexels.com/media/users/3/137782/isolated/preview/5317233afd8c42be610172dc89c5dd18-realistic-moon-by-vexels.png";
-      document.body.style.background = "rgb(40, 40, 40)";
     }
     sun.style.width = "100px";
     sun.style.height = "100px";
@@ -89,6 +88,8 @@ window.addEventListener("load", function () {
   }
 
   function setDarkMode() {
+    document.body.style.background = "rgb(40, 40, 40)";
+    // document.getElementsByTagName('img')[0].src = "https://cdn.clipart.email/39ec82631b4f7c7bad3b151d54918eaf_google-transparent-background-png-cliparts-free-download-hiclipart_300-225.jpeg"
     const links = document.querySelectorAll('body a')
     links.forEach(link => {
       link.style.color = "cornflowerblue";
