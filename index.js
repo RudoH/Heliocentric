@@ -88,8 +88,8 @@ window.addEventListener("load", function () {
   }
 
   function setDarkMode() {
-    document.body.style.background = "rgb(40, 40, 40)";
-    // document.getElementsByTagName('img')[0].src = "https://cdn.clipart.email/39ec82631b4f7c7bad3b151d54918eaf_google-transparent-background-png-cliparts-free-download-hiclipart_300-225.jpeg"
+    document.body.style.background = "#3e3e3e";
+    document.getElementsByTagName('img')[0].src = "https://i.imgur.com/1mRXquG.png"
     const links = document.querySelectorAll('body a')
     links.forEach(link => {
       link.style.color = "cornflowerblue";
